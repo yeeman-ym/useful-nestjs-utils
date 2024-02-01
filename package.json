@@ -2,8 +2,28 @@
   "name": "useful-nestjs-utils",
   "version": "1.0.0",
   "description": "A simple package with some often used nestjs utils.",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./decorators": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
+    "build": "tsup",
+    "dev": "tsup src/index.ts --watch",
+    "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
+    "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,6 +31,7 @@
     "url": "git+https://github.com/yeeman-ym/useful-nestjs-utils.git"
   },
   "keywords": [
+    "typescript",
     "nestjs"
   ],
   "author": "ym",
@@ -28,5 +49,10 @@
     "date-fns": "^3.3.1",
     "reflect-metadata": "^0.1.14",
     "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "prettier": "3.2.4",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
   }
 }
