@@ -1,6 +1,6 @@
 import { applyDecorators } from "@nestjs/common";
 import { IsDate, MinDate } from "class-validator";
-import { TransformStringToDate } from "../transformation/transform-date-string.decorator";
+import { TransformStringToDate } from "../transformation";
 
 export function IsInFuture() {
   return applyDecorators(
