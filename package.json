@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "A simple package with some often used nestjs utils.",
   "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "package.json"
   ],
   "exports": {
     ".": {
