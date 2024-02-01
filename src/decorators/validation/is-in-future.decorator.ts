@@ -6,6 +6,6 @@ export function IsInFuture() {
   return applyDecorators(
     IsDate(),
     MinDate(new Date()),
-    TransformStringToDate()
+    TransformStringToDate(),
   );
 }

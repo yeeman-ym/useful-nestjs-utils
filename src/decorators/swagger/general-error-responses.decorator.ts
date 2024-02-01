@@ -1,14 +1,14 @@
-import { applyDecorators } from '@nestjs/common';
+import { applyDecorators } from "@nestjs/common";
 import {
   ApiBadRequestResponse,
   ApiInternalServerErrorResponse,
   ApiUnauthorizedResponse,
-} from '@nestjs/swagger';
+} from "@nestjs/swagger";
 
 export function ApiGeneralErrorResponse() {
   return applyDecorators(
-    ApiBadRequestResponse({ description: 'Validation error' }),
-    ApiUnauthorizedResponse({ description: 'Unauthorized' }),
-    ApiInternalServerErrorResponse({ description: 'Unknown error' }),
+    ApiBadRequestResponse({ description: "Validation error" }),
+    ApiUnauthorizedResponse({ description: "Unauthorized" }),
+    ApiInternalServerErrorResponse({ description: "Unknown error" }),
   );
 }

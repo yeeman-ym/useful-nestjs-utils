@@ -14,7 +14,7 @@ import { isAfter } from "date-fns";
  */
 export function DateIsAfter(
   property: string,
-  validationOptions?: ValidationOptions
+  validationOptions?: ValidationOptions,
 ) {
   return function (object: any, propertyName: string) {
     registerDecorator({

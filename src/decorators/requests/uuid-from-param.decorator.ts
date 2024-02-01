@@ -3,7 +3,7 @@ import {
   ExecutionContext,
   Paramtype,
   ParseUUIDPipe,
-} from '@nestjs/common';
+} from "@nestjs/common";
 
 export const UuidFromParam = createParamDecorator(
   (data: string, ctx: ExecutionContext) => {
@@ -11,7 +11,7 @@ export const UuidFromParam = createParamDecorator(
     const { id } = request.params;
 
     return new ParseUUIDPipe().transform(id, {
-      type: 'param' as Paramtype,
+      type: "param" as Paramtype,
       data,
     });
   },

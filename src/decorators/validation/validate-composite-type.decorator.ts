@@ -4,11 +4,11 @@ import { IsObject, ValidateNested } from "class-validator";
 
 export function ValidateCompositeType(
   CompositeTypeDTO: ClassConstructor<object>,
-  isArray = false
+  isArray = false,
 ) {
   return applyDecorators(
     IsObject({ each: isArray }),
     ValidateNested({ each: isArray }),
-    Type(() => CompositeTypeDTO)
+    Type(() => CompositeTypeDTO),
   );
 }

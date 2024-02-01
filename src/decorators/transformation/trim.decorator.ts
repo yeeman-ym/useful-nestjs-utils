@@ -1,8 +1,8 @@
-import { Transform, TransformOptions } from 'class-transformer';
+import { Transform, TransformOptions } from "class-transformer";
 
 export type TrimOptions = {
   /** @default 'both' */
-  strategy?: 'start' | 'end' | 'both';
+  strategy?: "start" | "end" | "both";
 };
 
 export function Trim(
@@ -10,14 +10,14 @@ export function Trim(
   transformOptions?: TransformOptions,
 ): (target: any, key: string) => void {
   return Transform(({ value }: any) => {
-    if ('string' !== typeof value) {
+    if ("string" !== typeof value) {
       return value;
     }
 
     switch (options?.strategy) {
-      case 'start':
+      case "start":
         return value.trimStart();
-      case 'end':
+      case "end":
         return value.trimEnd();
       default:
         return value.trim();
