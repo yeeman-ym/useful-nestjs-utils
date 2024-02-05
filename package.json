@@ -1,24 +1,35 @@
 {
   "name": "useful-nestjs-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple package with some often used nestjs utils.",
-  "main": "./dist/index.js",
+  "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/index.d.mts",
   "files": [
     "dist",
     "package.json"
   ],
   "exports": {
+    "./package.json": "./package.json",
     ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": {
+        "types": "./index.d.mts",
+        "default": "./index.mjs"
+      },
+      "import": {
+        "types": "./index.d.mts",
+        "default": "./index.mjs"
+      }
     },
     "./decorators": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": {
+        "types": "./index.d.mts",
+        "default": "./index.mjs"
+      },
+      "import": {
+        "types": "./index.d.mts",
+        "default": "./index.mjs"
+      }
     }
   },
   "scripts": {
