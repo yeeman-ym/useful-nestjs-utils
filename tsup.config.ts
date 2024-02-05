@@ -9,5 +9,5 @@ export default defineConfig({
   clean: true, // Clean output directory before building
   outDir: "dist", // Output directory
   entry: ["src/index.ts"], // Entry point(s)
-  format: ["esm"], // Output format(s)
+  format: ["cjs", "esm"],
 });
