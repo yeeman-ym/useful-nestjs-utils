@@ -1,6 +1,6 @@
 {
   "name": "useful-nestjs-utils",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A collection of useful decorators for NestJS applications.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

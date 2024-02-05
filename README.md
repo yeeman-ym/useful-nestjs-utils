@@ -28,23 +28,23 @@ import {
 } from "useful-nestjs-utils";
 ```
 
-### Decorators
+## Decorators
 
 Below is the complete list of decorators provided by this package, organized by their respective folders:
 
-#### Requests
+### Requests
 
 - `Public`
 - `User`
 - `UUIDFromParam`
 
-#### Transformation
+### Transformation
 
 - `TransformStringToDate`
 - `TransformStringBoolean`
 - `Trim`
 
-#### Validation
+### Validation
 
 - `DateIsAfter`
 - `IsEmailArray`
@@ -52,7 +52,7 @@ Below is the complete list of decorators provided by this package, organized by 
 - `IsMongoIdArray`
 - `ValidateCompositeType`
 
-#### Swagger
+### Swagger
 
 - `ApiGeneralCreateResponse`
 - `ApiGeneralEditResponse`
@@ -60,11 +60,11 @@ Below is the complete list of decorators provided by this package, organized by 
 - `ApiGeneralGetResponse`
 - `ApiGeneralOkResponse`
 
-### Examples
+## Examples
 
 The following examples demonstrate simple usages of some of the decorators.
 
-#### User
+### User
 
 Retrieves user document from request.
 
@@ -82,7 +82,7 @@ export class UsersController {
 }
 ```
 
-#### UUIDFromParam
+### UUIDFromParam
 
 Example:
 
@@ -98,7 +98,7 @@ export class ItemsController {
 }
 ```
 
-#### Trim
+### Trim
 
 Removes leading and trailing whitespace from string inputs.
 
@@ -114,7 +114,7 @@ export class CreateDto {
 }
 ```
 
-#### TransformStringToDate and DateIsAfter
+### TransformStringToDate and DateIsAfter
 
 Transforms and validates date inputs.
 
@@ -146,7 +146,7 @@ export class DateRangeDto {
 }
 ```
 
-#### ValidateCompositeType
+### ValidateCompositeType
 
 Validates composite types.
 
