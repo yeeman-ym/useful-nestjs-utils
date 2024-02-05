@@ -1,6 +1,6 @@
 {
   "name": "useful-nestjs-utils",
-  "version": "1.0.4",
+  "version": "1.0.3",
   "description": "A simple package with some often used nestjs utils.",
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
@@ -32,7 +32,6 @@
       }
     }
   },
-  "type": "module",
   "scripts": {
     "build": "tsup",
     "dev": "tsup src/index.ts --watch",
