@@ -1,10 +1,10 @@
 {
   "name": "useful-nestjs-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple package with some often used nestjs utils.",
-  "main": "./dist/index.js",
+  "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/index.d.mts",
   "files": [
     "dist",
     "package.json"
